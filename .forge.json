@@ -1,0 +1,8 @@
+{
+  "actions": [
+    {
+      "name": "First command",
+      "shellCommand": "echo 'hellooo'"
+    }
+  ]
+}
