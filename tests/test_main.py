@@ -1,9 +1,16 @@
+"""
+Tests the Forge CLI
+"""
+
 import json
+
 from unittest.mock import mock_open, patch
 from forge.main import read_config
 
 
 def test_read_config_success():
+    """Tests the reading the configuration file"""
+
     mock_data = {
         "actions": [
             {"name": "Build project"},
