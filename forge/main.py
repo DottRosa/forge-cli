@@ -3,6 +3,7 @@
 
 import json
 import os
+from forge.help import HelpParser
 
 
 def get_config_path():
@@ -48,6 +49,11 @@ def read_config():
 
 def main():
     """Main function of the CLI"""
+    # Render the help section -h
+    parser = HelpParser(description="Forge CLI: manage your codebases!")
+
+    parser.parse_args()
+
     # Read the configuration file
     read_config()
 
